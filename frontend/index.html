@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoBrutal Todo</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>NEO-TODO</h1>
+            <p>A brutalist approach to productivity</p>
+        </header>
+        
+        <div class="todo-app">
+            <div class="input-section">
+                <input type="text" id="todo-input" placeholder="What needs to be done?" class="brutal-input">
+                <button id="add-btn" class="brutal-btn">ADD</button>
+            </div>
+            
+            <div class="filters">
+                <button class="brutal-btn filter-btn active" data-filter="all">All</button>
+                <button class="brutal-btn filter-btn" data-filter="active">Active</button>
+                <button class="brutal-btn filter-btn" data-filter="completed">Completed</button>
+            </div>
+            
+            <ul id="todo-list" class="todo-list"></ul>
+        </div>
+    </div>
+    <!-- NeoBrutal Delete Confirmation Modal -->
+        <!-- NeoBrutal Delete Confirmation Modal -->
+        <div id="delete-modal" class="brutal-modal">
+            <div class="brutal-modal-content">
+                <h2>Hapus List</h2>
+                <p id="delete-modal-text"></p>
+                <div class="brutal-modal-actions">
+                    <button id="confirm-delete" class="brutal-btn brutal-btn-danger">DELETE</button>
+                    <button id="cancel-delete" class="brutal-btn">CANCEL</button>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Todo Modal -->
+        <div id="edit-modal" class="brutal-modal">
+        <div class="brutal-modal-content">
+            <h2> EDIT LIST</h2>
+            <input type="text" id="edit-todo-input" class="brutal-input">
+            <div class="brutal-modal-actions">
+            <button id="confirm-edit" class="brutal-btn brutal-btn-edit">SAVE</button>
+            <button id="cancel-edit" class="brutal-btn">CANCEL</button>
+            </div>
+        </div>
+        </div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
